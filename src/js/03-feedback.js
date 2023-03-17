@@ -35,7 +35,7 @@ function populateForm() {
 
     if (savedFormData) {
 
-        formDataValue = JSON.parse(savedFormData);
+        const formDataValue = JSON.parse(savedFormData);
 
         refs.input.value = formDataValue.email;
         refs.textarea.value = formDataValue.message;
